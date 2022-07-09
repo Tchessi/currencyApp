@@ -1,0 +1,81 @@
+*, ::before, ::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+ background: linear-gradient(to right, #131035, #474097, #23236f);
+}
+
+h1 {
+	font-size: 1.5rem;
+	color: #f1f1f1;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 20px 0 50px 0;
+}
+
+.container-boxes {
+	margin: 0 auto ;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.box {
+	flex-shrink: 0;
+	width: 300px;
+	height: 300px;
+	background: #f1f1f1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 10px;
+}
+
+label {
+	font-size: 20px;
+}
+
+.starting-value {
+	margin-top: 20px;
+	font-size: 25px;
+	width: 60%;
+}
+
+select {
+	width: 50%;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.rate-compare {
+	/* margin-bottom: 50px;
+	margin-top: 20px; */
+	font-size: 25px;
+}
+
+.result {
+	text-align: center;
+	font-size: 50px;
+	margin-top: 100px;
+	color: #f1f1f1;
+
+}
+
+@media screen and (max-width: 700px) {
+	.container-boxes {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+	.box {
+		margin: 5px;
+	}
+}
